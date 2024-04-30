@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZ1</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <button @click="reverse()" class="btn">{{btn}}</button>
+
+        <ul v-for="(item, index) in list" @click="liDel(index)">
+            {{item}}
+        </ul>
+        <button @click="liAdd()">Добавить</button>
+    </div>
+</body>
+</html>

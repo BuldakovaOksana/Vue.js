@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .animation {
+        animation: mymove 1s ease-in-out;
+      }
+      @keyframes mymove {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <p>{{helow}}</p> -->
+      <!-- <p>Товар в Корзине: {{count}}</p> -->
+      <!-- <button @click="addCounter()">{{btn}}</button> -->
+
+      <!-- <button @click="canBy=!canBy">Мне исполнилось 14 лет</button>
+      <p v-show="canBy">Можете заказать товар</p>
+      <button @click="cantBy=!cantBy">Мне еще нет 14 лет</button>
+      <p v-show="cantBy">Доступ закрыт</p> -->
+
+      <!-- <button @click="showContent = !showContent">Показать еще</button>
+      <p class="animation" v-show="showContent">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere facilis
+        iure beatae inventore explicabo, fugit dicta. Aperiam natus quibusdam
+        necessitatibus magnam eos, non, voluptatibus incidunt reiciendis facilis
+        vel ad alias.
+      </p> -->
+
+      <button @click="generateRandomNum">Генерировать случайное число</button>
+      <p v-if="number<5">{{ number }} меньше 5</p>
+      <p v-else-if="number>=5 && number<=9">{{ number }} число от 5 до 9</p>
+      <p v-else>{{ number }} больше 9</p>
+    </div>
+  </body>
+</html>

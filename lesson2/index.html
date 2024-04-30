@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <!-- <div>
+            <h2>{{product.title}}</h2>
+            <p>{{product.price}}</p>
+            <img width="300" :src="product.image" alt="product"> <br>
+            <button @click="addDiscount" :disabled = "isDisabled">Скидка</button>
+        </div> -->
+
+        <!-- <ul>
+            <li v-for="user in users" :key="user.id">{{user.name}} - {{user.age}}></li>
+        </ul> -->
+
+        <!-- <ul>
+            <li v-for="product in items" :key="product.id">
+                <input v-model.lazy.number="product.count" type="number" step="1" />
+                <label>
+                    <input type="checkbox"> {{product.name}}
+                </label>
+            </li>
+        </ul> -->
+
+        <form @submit.prevent = "addContacts" action="#">
+            <input v-model.lazy="fistname" type="text" placeholder="Имя">
+            <input v-model.lazy="lastname" type="text" placeholder="Фамилия">
+            <input v-model.lazy="email" type="email" placeholder="Email">
+            <button>Отправить</button>
+        </form>
+        <ul>
+            <li v-for="contact in contacts" :key="contact.id" @click="deleteContact(contact.id)">
+                {{contact.fistname}} - {{contact.lastname}} - {{contact.email}}
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>

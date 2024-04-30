@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header center">
+        <a href="#" class="header__logo">
+          <img src="img/Logo.png" alt="logo" />
+          <p>Interno</p>
+        </a>
+        <nav class="header__nav">
+          <a href="#" class="header__nav__link">Home</a>
+          <a href="#" class="header__nav__link">Project</a>
+          <a href="#" class="header__nav__link">Blog</a>
+        </nav>
+      </header>
+      <section class="banner center">
+        <div class="banner__background">
+          <div class="banner__content">
+            <h1 class="banner__content__title">Let Your Home Be Unique</h1>
+            <p class="banner__content__text">
+              There are many variations of the passages of lorem Ipsum
+              fromavailable, majority.
+            </p>
+            <a href="#" class="banner__content__btn"
+              >Get Started
+              <svg
+                width="18.000000"
+                height="16.000000"
+                viewBox="0 0 18 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <desc>Created with Pixso.</desc>
+                <defs />
+                <path
+                  id="Vector"
+                  d="M1 7.43L14.72 7.29M9.61 0.91L16.14 7.43L9.48 14.08"
+                  stroke="#CDA274"
+                  stroke-opacity="1.000000"
+                  stroke-width="2.000000"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="project center">
+        <h2 class="project__title">Follow Our Projects</h2>
+        <p class="project__text">
+          It is a long established fact that a reader will be distracted by the of
+          readable content of page lookings at its layouts points.
+        </p>
+        <div class="project__contener">
+          <div class="project__item">
+            <img src="img/project1.png" alt="project1" />
+            <div class="project__item__content">
+              <div class="project__item__content-contener">
+                <h3 class="project__item__content-title">Modern Kitchan</h3>
+                <p class="project__item__content-text">Decor / Artchitecture</p>
+              </div>
+              <img
+                class="project__item__content-img"
+                src="img/next.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="project__item">
+            <img src="img/project2.png" alt="project2" />
+            <div class="project__item__content">
+              <div class="project__item__content-contener">
+                <h3 class="project__item__content-title">Modern Kitchan</h3>
+                <p class="project__item__content-text">Decor / Artchitecture</p>
+              </div>
+              <img
+                class="project__item__content-img"
+                src="img/next.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="project__item">
+            <img src="img/project3.png" alt="project3" />
+            <div class="project__item__content">
+              <div class="project__item__content-contener">
+                <h3 class="project__item__content-title">Modern Kitchan</h3>
+                <p class="project__item__content-text">Decor / Artchitecture</p>
+              </div>
+              <img
+                class="project__item__content-img"
+                src="img/next.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="project__item">
+            <img src="img/project4.png" alt="project4" />
+            <div class="project__item__content">
+              <div class="project__item__content-contener">
+                <h3 class="project__item__content-title">Modern Kitchan</h3>
+                <p class="project__item__content-text">Decor / Artchitecture</p>
+              </div>
+              <img
+                class="project__item__content-img"
+                src="img/next.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="counter center">
+        <div class="counter__item">
+          <h2 class="counter__item__title">12</h2>
+          <p class="counter__item__text">Years Of Experiance</p>
+        </div>
+        <div class="counter__item">
+          <h2 class="counter__item__title">85</h2>
+          <p class="counter__item__text">Success Project</p>
+        </div>
+        <div class="counter__item">
+          <h2 class="counter__item__title">15</h2>
+          <p class="counter__item__text">Active Project</p>
+        </div>
+        <div class="counter__item">
+          <h2 class="counter__item__title">95</h2>
+          <p class="counter__item__text">Happy CUstomers</p>
+        </div>
+      </div>
+      <section class="blog center">
+        <h2 class="blog__title">Articles & News</h2>
+        <p class="blog__text">
+          It is a long established fact that a reader will be distracted by the of
+          readable content of a page when lookings at its layouts the points of
+          using.
+        </p>
+        <div class="blog__contener">
+          <div v-for="(item, index) in articls"  :key="index" class="articlesNews__articls__item">
+            <div class="articlesNews__articls__item-imgContener">
+                <img :src="'img/' + item.img" alt="article" />
+                <p  class="articlesNews__articls__item-tag">{{item.textImg}}</p>
+            </div>
+            <div class="articlesNews__articls__item-content">
+                <h3 v-html="item.title" class="articlesNews__articls__item-title"></h3>
+                <div class="articlesNews__articls__item-data">
+                    <p class="articlesNews__articls__item-data-data">{{item.data}}</p>
+                    <a href="" class="articlesNews__articls__item-data-next">
+                        <svg width="52.000000" height="52.000000" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                    Created with Pixso.
+                            </desc>
+                            <defs/>
+                            <circle id="Ellipse 4" cx="25.500000" cy="25.266968" r="26.000000" fill="#F4F0EC" fill-opacity="1.000000"/>
+                            <path id="Vector" d="M23.27 31.95L29.21 25.26L23.27 18.58" stroke="#292F36" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
+                        </svg>
+                        
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+      </section>
+      <footer class="footer center">
+        <div class="footer__interno">
+          <a class="footer__interno__logo" href="#"
+            ><img src="img/Logo.png" alt="logo" />
+            <p>Interno</p></a
+          >
+          <p class="footer__interno__text">
+            It is a long established fact that a reader will be distracted
+            lookings.
+          </p>
+          <div class="footer__interno__icons">
+            <a href="#">
+              <svg
+                width="19"
+                height="16"
+                viewBox="0 0 19 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.6367 4.59375C17.3398 4.06641 17.9727 3.43359 18.4648 2.69531C17.832 2.97656 17.0938 3.1875 16.3555 3.25781C17.1289 2.80078 17.6914 2.09766 17.9727 1.21875C17.2695 1.64062 16.4609 1.95703 15.6523 2.13281C14.9492 1.39453 14 0.972656 12.9453 0.972656C10.9062 0.972656 9.25391 2.625 9.25391 4.66406C9.25391 4.94531 9.28906 5.22656 9.35938 5.50781C6.30078 5.33203 3.55859 3.85547 1.73047 1.64062C1.41406 2.16797 1.23828 2.80078 1.23828 3.50391C1.23828 4.76953 1.87109 5.89453 2.89062 6.5625C2.29297 6.52734 1.69531 6.38672 1.20312 6.10547V6.14062C1.20312 7.93359 2.46875 9.41016 4.15625 9.76172C3.875 9.83203 3.52344 9.90234 3.20703 9.90234C2.96094 9.90234 2.75 9.86719 2.50391 9.83203C2.96094 11.3086 4.33203 12.3633 5.94922 12.3984C4.68359 13.3828 3.10156 13.9805 1.37891 13.9805C1.0625 13.9805 0.78125 13.9453 0.5 13.9102C2.11719 14.9648 4.05078 15.5625 6.16016 15.5625C12.9453 15.5625 16.6367 9.97266 16.6367 5.08594C16.6367 4.91016 16.6367 4.76953 16.6367 4.59375Z"
+                  fill="#292F36"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                width="17"
+                height="16"
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4.14062 16V5.48828H0.871094V16H4.14062ZM2.48828 4.08203C3.54297 4.08203 4.38672 3.20312 4.38672 2.14844C4.38672 1.12891 3.54297 0.285156 2.48828 0.285156C1.46875 0.285156 0.625 1.12891 0.625 2.14844C0.625 3.20312 1.46875 4.08203 2.48828 4.08203ZM16.3398 16H16.375V10.2344C16.375 7.42188 15.7422 5.24219 12.4375 5.24219C10.8555 5.24219 9.80078 6.12109 9.34375 6.92969H9.30859V5.48828H6.17969V16H9.44922V10.7969C9.44922 9.42578 9.69531 8.125 11.3828 8.125C13.0703 8.125 13.1055 9.67188 13.1055 10.9023V16H16.3398Z"
+                  fill="#292F36"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__pages">
+          <h3 class="footer__pages__title">Pages</h3>
+          <a href="#" class="footer__pages__link">Home</a>
+          <a href="#" class="footer__pages__link">Project</a>
+          <a href="#" class="footer__pages__link">Blog</a>
+        </div>
+        <div class="footer__contact">
+          <h3 class="footer__contact__title">Contact</h3>
+          <p class="footer__contact__info">
+            55 East Birchwood Ave. Brooklyn, New York 11201
+          </p>
+          <p class="footer__contact__info">contact@interno.com</p>
+          <p class="footer__contact__info">(123) 456 - 7890</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
