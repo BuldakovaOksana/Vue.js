@@ -1,6 +1,6 @@
 <template>
-  <!-- <HomePage /> -->
-  <!-- <BlogPage/> -->
+  <HomePage />
+  <BlogPage/>
   <BlogDetailsPage />
 </template>
 
@@ -8,15 +8,15 @@
 
 
 
-// import HomePage from './pages/HomePage.vue';
-// import BlogPage from './pages/BlogPage.vue';
+import HomePage from './pages/HomePage.vue';
+import BlogPage from './pages/BlogPage.vue';
 import BlogDetailsPage from './pages/BlogDetailsPage.vue';
 
 export default {
 
   components: {
-    // HomePage, 
-    // BlogPage,
+    HomePage, 
+    BlogPage,
     BlogDetailsPage,
 
   }
