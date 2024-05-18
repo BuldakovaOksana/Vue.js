@@ -1,6 +1,6 @@
 <template>
   <div class="item__box">
-    <div v-for="project in projects" :key="project.id" v-on:dblclick="addLike(project.like)" class="item">
+    <div v-for="project in projects" :key="project.id" v-on:dblclick="addLike(project)" class="item">
       <div class="item__img">
         <img class="item__img__img" :src="require('../../../assets/img/' + project.image)" alt="item img">
         <svg :class="[project.like ? 'item__img__svg' : 'item__img__nosvg']" width="35.000000" height="34.000000"
@@ -61,10 +61,10 @@ export default {
 
   },
   methods: {
-    addLike(like) {
-      console.log(like);
-      like = !like
-      console.log(like);
+    addLike(item) {
+      console.log(item.like);
+      item.like = !item.like
+      console.log(item.like);
     }
   }
 }

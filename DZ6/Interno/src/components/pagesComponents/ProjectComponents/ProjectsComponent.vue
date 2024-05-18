@@ -27,50 +27,56 @@ export default {
                     image: "projectImage1.jpeg",
                     title: "Minimal Bedroom",
                     text: "Decor / Artchitecture",
-                    like: true
+                    like: false
                 },
                 {
                     id: 1,
                     image: "projectImage2.jpeg",
                     title: "Classic Minimal Bedroom",
                     text: "Decor / Artchitecture",
+                    like: false
                 },
                 {
                     id: 2,
                     image: "projectImage3.jpeg",
                     title: "Minimal Bedroom table",
                     text: "Decor / Artchitecture",
+                    like: false
                 },
                 {
                     id: 3,
                     image: "projectImage4.jpeg",
                     title: "Modern Medroom",
                     text: "Decor / Artchitecture",
+                    like: false
                 },
                 {
                     id: 4,
                     image: "projectImage5.jpeg",
                     title: "Minimal Bedroom",
                     text: "Decor / Artchitecture",
+                    like: false
                 },
                 {
                     id: 5,
                     image: "projectImage6.jpeg",
                     title: "Modern Medroom",
                     text: "Decor / Artchitecture",
-                    like: true
+                    like: false
                 },
                 {
                     id: 6,
                     image: "projectImage7.jpeg",
                     title: "System Table",
                     text: "Decor / Artchitecture",
+                    like: false
                 },
                 {
                     id: 7,
                     image: "projectImage8.jpeg",
                     title: "Modern Medroom",
                     text: "Decor / Artchitecture",
+                    like: false
                 },
             ],
             projectsKitchan: [
@@ -79,6 +85,7 @@ export default {
                     image: "projectImage9.png",
                     title: "Modern Medroom",
                     text: "Decor / Artchitecture",
+                    like: false
                 }
             ],
             projectsLivingArea: [
@@ -87,6 +94,7 @@ export default {
                     image: "projectImage10.jpeg",
                     title: "Modern Medroom",
                     text: "Decor / Artchitecture",
+                    like: false
                 }
             ]
 
